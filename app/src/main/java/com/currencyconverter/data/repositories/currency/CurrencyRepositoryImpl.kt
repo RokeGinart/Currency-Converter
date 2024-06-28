@@ -1,5 +1,6 @@
 package com.currencyconverter.data.repositories.currency
 
+import android.util.Log
 import com.currencyconverter.data.api.CurrencyApi
 import com.currencyconverter.data.model.ui.CurrencyRate
 import com.currencyconverter.utils.RATE_UPDATE_TIME
@@ -30,10 +31,13 @@ class CurrencyRepositoryImpl @Inject constructor(
 
     private suspend fun fetchData() = coroutineScope {
         repeatableJob = launch {
+            Log.d("TAGS", "HERE")
             while (true) {
                 try {
                     val response = api.getCurrencyExchangeRate()
                     if (response.isSuccessful) {
+                        Log.d("TAGS", "response $response")
+
                         response.body()?.let { body ->
                             _currencyRate.emit(ResultReceiver.Success(body.mapToCurrencyRate()))
                         } ?: let {

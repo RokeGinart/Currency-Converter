@@ -19,7 +19,6 @@ import com.currencyconverter.utils.formatPrice
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -251,9 +250,6 @@ class HomeViewModel @Inject constructor(
                             )
                         )
                     }
-                    delay(100)
-                }.invokeOnCompletion {
-                    setEffect { Effect.CloseKeyboard }
                 }
             } catch (e: NumberFormatException) {
                 setEffect { Effect.ShowToast("Invalid number format") }

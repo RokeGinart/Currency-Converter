@@ -109,8 +109,7 @@ fun ItemExchange(
 
         Text(
             modifier = Modifier
-                .padding(start = dimensionResource(id = R.dimen.default_middle_padding))
-                .weight(1f),
+                .padding(start = dimensionResource(id = R.dimen.default_middle_padding)),
             text = text,
             style = Typography.bodyMedium.copy(
                 color = Black,
