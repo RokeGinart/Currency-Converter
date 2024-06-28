@@ -42,15 +42,6 @@ suspend fun <T> DataStore<Preferences>.setValue(key: Preferences.Key<T>, value: 
     }
 }
 
-suspend fun <T> DataStore<Preferences>.safeRemove(key: Preferences.Key<T>) {
-    try {
-        edit { preferences ->
-            preferences.remove(key)
-        }
-    } catch (e: IOException) {
-        Log.e("Error" , "$e")
-    }
-}
 
 suspend fun DataStore<Preferences>.getStringValue(
     key: Preferences.Key<String>,

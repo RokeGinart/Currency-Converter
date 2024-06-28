@@ -21,9 +21,7 @@ class MainViewModel @Inject constructor(
 
     override fun createInitialState(): State = State()
 
-    override fun handleEvent(event: Event) {
-
-    }
+    override fun handleEvent(event: Event) {}
 
     private fun getCurrencyRate() {
         viewModelScope.launch { getCurrencyRateUseCase.invoke(true) }

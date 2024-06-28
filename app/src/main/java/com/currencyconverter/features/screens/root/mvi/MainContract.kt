@@ -6,15 +6,11 @@ import com.currencyconverter.features.base.mvi.UiState
 
 
 class MainContract {
-    sealed class Event : UiEvent {
-
-    }
+    sealed class Event : UiEvent
 
     data class State(
         val isLoading: Boolean = false,
     ) : UiState
 
-    sealed class Effect : UiEffect {
-
-    }
+    sealed class Effect : UiEffect
 }
