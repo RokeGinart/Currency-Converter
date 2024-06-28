@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="balance">My balances</string>
+    <string name="exchange">Currency exchange</string>
+    <string name="sell">Sell</string>
+    <string name="sell_hint">Enter amount</string>
+    <string name="receive">Receive</string>
+    <string name="submit">Submit</string>
+    <string name="currency_picker">Choose currency</string>
+    <string name="search_hint">Search</string>
+    <string name="empty_search_title">Nothing found</string>
+    <string name="empty_search_description">Currency with that name not found. Try another one!</string>
+    <string name="loading_error">Unable to load data.\nTry again.</string>
+    <string name="retry">Retry</string>
+    <string name="exchange_rate">Exchange rate: 1 EUR = %s</string>
+    <string name="user_balance_value">Your balance: %.2f</string>
+    <string name="fee_free">Next %d transaction for free!</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="checkout_sell">Sell:</string>
+    <string name="checkout_receive">Receive:</string>
+    <string name="checkout_fee">Fee:</string>
+    <string name="checkout_confirm">Confirm</string>
+    <string name="checkout_cancel">Cancel</string>
+</resources>

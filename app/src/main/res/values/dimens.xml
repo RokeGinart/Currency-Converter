@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="default_zero_padding">0dp</dimen>
+    <dimen name="default_tiny_padding">2dp</dimen>
+    <dimen name="default_smallest_padding">4dp</dimen>
+    <dimen name="default_small_padding">6dp</dimen>
+    <dimen name="default_middle_padding">8dp</dimen>
+    <dimen name="default_above_middle_padding">10dp</dimen>
+    <dimen name="default_under_common_padding">12dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_under_big_padding">20dp</dimen>
+    <dimen name="default_big_padding">24dp</dimen>
+    <dimen name="default_biggest_padding">32dp</dimen>
+    <dimen name="default_enormous_padding">40dp</dimen>
+
+    <dimen name="bottom_button_padding">80dp</dimen>
+</resources>
