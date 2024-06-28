@@ -11,15 +11,13 @@ import com.currencyconverter.utils.getBooleanValue
 import com.currencyconverter.utils.getIntValue
 import com.currencyconverter.utils.setValue
 import dagger.hilt.android.qualifiers.ApplicationContext
-import kotlinx.coroutines.CoroutineScope
 import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class SessionCacheImpl @Inject constructor(
-    @ApplicationContext context: Context,
-    private val coroutineScope: CoroutineScope,
+    @ApplicationContext context: Context
 ) : SessionCache {
 
     private val Context.dataStore by preferencesDataStore(

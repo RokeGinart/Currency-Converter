@@ -1,6 +1,5 @@
 package com.currencyconverter.data.cache
 
-@Suppress("TooManyFunctions")
 interface SessionCache {
 
     suspend fun isFirstLaunch(): Boolean
